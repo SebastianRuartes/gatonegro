@@ -36,12 +36,12 @@ header{
 }
 .nav-enlaces{
     display: inline-block;
-    color: black;
+    color:whitesmoke;
     text-decoration: none;
     padding: 60px 60px;
 }
 .nav-enlaces:hover{
-    color:cornflowerblue;
+    color:rgb(116, 146, 202);
 }
 
 
@@ -157,13 +157,36 @@ footer{
     row-gap: 20px;
     grid-template-areas: "header header" "section servicio" "section producto" "footer footer";
 }
+.carne{
+    transform:translateX(150px) ;
+}
+.pasta{
+    transform:translateX(150px) ;
+}
+.pescado{
+    transform:translateX(150px) ;
+}
+h3{
+    width: 80px;
+    height: 20px;
+    background-color: aqua;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 1s;
 
-/* section {
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows:repeat(2,auto) ;
-    
-} */
+}
+@keyframes efecto{
+    0%{}
+    25%{ width:100px ;
+
+    }
+    50%{width:90px ; background-color: aquamarine;}
+    75%{width:100px ;}
+    100%{width:80px ;}
+}
+
 /*Evento*/
 header{
     grid-area: header;
