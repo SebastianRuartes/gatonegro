@@ -5,29 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTO</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="../logo/logo1.jpeg">
 </head>
 <body>
     <div id="grid4">
     <header>
-        <div><img src="../logo/logo.jpeg" width="150x" height="150px"></div>
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="nav-enlaces">HOME</a></li>
-                <li><a href="nosotros.html" class="nav-enlaces">NOSOTROS</a></li>
-                <li><a href="gastronomia.html" class="nav-enlaces">GASTRONOMIA</a></li>
-                <li><a href="eventos.html" class="nav-enlaces">EVENTOS</a></li>
-                <li><a href="contactos.html" class="nav-enlaces">CONTACTOS</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"> <img src="../logo/logo.jpeg" alt="Gato Negro" width="150px" height="150px"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/gastronomia.html">Gastronomia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contactos.html">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <section id="formulario">
             <h1 class="contacto">CONTACTO</h1>
         <section class="formulario">
         <form action="#" method="get" enctype="multipart/form-data"></form>
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" name="nombre">
+        <div class="input-group">
+            <span class="input-group-text">Nombre</span>
+            <input type="text" aria-label="Nombre" class="form-control">
+            <span class="input-group-text">Apelido</span>
+            <input type="text" aria-label="Apellido" class="form-control">
+          </div>
             <label for="correo electronico">Correo Electronico:</label>
             <input type="text" type="number" placeholder="block-1234@gmail.com" name="correo electronico" >
             <label for="tu consulta">Tu Consulta:</label>
@@ -55,5 +67,6 @@
         <p class="footer">Copyright <strong>Estancia El Pardo</strong> - 2022. Todos los derechos reservados. Defensa de las y los consumidores</p>
         </footer>
     </div>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

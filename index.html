@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="pages/style.css">
     <link rel="icon" href="logo/logo1.jpeg">
 </head>
@@ -13,23 +14,58 @@
 <body>
     <div id="grilla">
         <header class="border">
-            <div><img src="logo/logo.jpeg" width="150x" height="150px"></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="nav-enlaces">HOME</a></li>
-                    <li><a href="pages/nosotros.html" class="nav-enlaces">NOSOTROS</a></li>
-                    <li><a href="pages/gastronomia.html" class="nav-enlaces">GASTRONOMIA</a></li>
-                    <li><a href="pages/eventos.html" class="nav-enlaces">EVENTOS</a></li>
-                    <li><a href="pages/contactos.html" class="nav-enlaces">CONTACTOS</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"> <img src="./logo/logo.jpeg" alt="Gato Negro" width="150px" height="150px"> </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/gastronomia.html">Gastronomia</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/eventos.html">Eventos</a></li>
+                      <li class="nav-item"><a class="nav-link" href="pages/contactos.html">Contacto</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
 
         <section class="border">
             <article>
                 <h1 id="titleID">Bar Gato Negro</h1>
-                <div ><img class="gifhome" src="https://media.giphy.com/media/ju5ycNq65QsjSHFcg1/giphy.gif "alt="Gato Negro Bar" width="1500px" height="800px"></div>
 
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="image/1.jfif" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/3.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                 <p class="intro-bar">
                     Gato Negro Bar nace del sentimiento de disfrutar un momento en familia y amigos, donde todos esten
                     en un ambiente
@@ -44,7 +80,7 @@
                 de las y los consumidores</p>
         </footer>
     </div>
-
+ <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
